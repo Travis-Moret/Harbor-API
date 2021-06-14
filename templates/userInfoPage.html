@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+
+   <!--Bootstrap Stylesheet-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <title>User Page</title>
+   <br>
+   <h1><strong><center>User Account</center></strong></h1>
+</head>
+<body>
+   <style>
+      h1 {
+         font-family:"Comic Sans MS", cursive, sans-serif;
+         text-align: center;
+      }
+      img {
+         width: 20%;
+         height: auto; 
+      }
+      body {
+         background-color: cadetblue;
+      }
+      .jwt {
+         width:80%;
+         padding: 0 20% 0 20%;
+         text-align:left;
+         word-break: break-all;
+         white-space: normal;
+      }
+   </style>
+   <center><p>Your authentication using Auth0 was successful!</p></center>
+   <center><p>This page will display the user's JWT for further api calls.</p></center>
+   <center><img src='https://media.tenor.com/images/4ca38afe91929923ca5b6c5e59a40455/tenor.gif'/></center>
+   <center><p>User Identification: </p></center>
+   <center><p class="user_id">{{USER_ID}}</p></center>
+   <center><p>JWT for authentication: </p></center>
+   <center><p class="jwt">{{JWT}}</p></center>
+   <br>
+   <center><a href= '/logout'><input type="button" value="Log out"/></center> 
+   <br>
+</body>
+</html>
